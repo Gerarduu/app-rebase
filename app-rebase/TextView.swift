@@ -9,6 +9,17 @@ import SwiftUI
 
 struct TextView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(title())
+            Text(subtitle())
+        }
+    }
+    
+    func title() -> String {
+        "Hello, World!"
+    }
+    
+    func subtitle() -> String {
+        "Hello, World Subtitle!"
     }
 }
