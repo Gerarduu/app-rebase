@@ -18,4 +18,12 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    private var view: some View {
+        VStack {}
+    }
+    
+    private var view2: some View {
+        VStack {}
+    }
 }
