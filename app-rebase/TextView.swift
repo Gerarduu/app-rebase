@@ -12,6 +12,15 @@ struct TextView: View {
         VStack {
             Text(title())
             Text(subtitle())
+            Button(action: {
+                print("Button tapped!")
+            }) {
+                Text("Tap me")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
         }
     }
     
